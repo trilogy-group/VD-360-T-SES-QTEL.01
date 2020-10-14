@@ -1,0 +1,43 @@
+1	NDIS-Ticket
+	1	crossListingSearches	allow cross listing searches
+	2	telephoneNumberSearches	allow telephone number searches
+	3	listSearches	allow list searches
+	4	emergencySearches	allow emergency searches
+	5	residentialSearches	allow residential searches
+	6	businessSearches	allow business searches
+	7	governmentSearches	allow government searches
+	8	expandedLocalitySearches	allow expanded locality searches
+	9	limitedExpandedLocalitySearches	allow limited expanded locality searches
+	10	stateOrProvinceSearches	allow state or province searches
+	11	regionRangeSearches	allow region range searches
+	12	countryRangeSearches	allow country range searches
+	13	expandedSubscriberSearches	allow expanded subscriber searches
+	14	localityEqualSearches	allow locality equal searches
+	15	houseNumberRangeSearches	allow house number range searches
+	16	exactLocalitySearches	allow exact locality searches
+	17	RESERVED	(show additional response attributes)
+	18	phoneticSearches	allow phonetic searches
+	19	sequentialSearches	allow sequential searches
+	20	unlimitedSearches	allow unlimited searches
+	21	demeritSearches	allow demerit searches
+	22	hideCaptions	allow to hide captions
+	23	RESERVED	(online-update purposes)
+	24	allowUpdates	allow online-updates
+	25	showNonListedEntries	show non-listed entries
+	26	showNonPublishedEntries	show non-published entries
+	27	showSecretEntriesType1	show secret entries of type 1
+	28	showSecretEntriesType2	show secret entries of type 2
+	29	showSecretEntriesType3	show secret entries of type 3
+	30	showNewListedEntries	show attributes of type new-listed
+	31	showOldListedEntries	show attributes of type old-listed
+	32	RESERVED	(show non-published entries on reverse search)
+
+16	VSTATION-Ticket
+	1	sendingSMS	allow sending sms
+	2	SMSeditable	allow editing the sms
+	3	Monitoring	allow monitoring
+	4	MapAndRoute	allow map and route
+	5	InformationServices	allow information services (SDF)
+	6	UNDEFINED
+	7	UNDEFINED
+	8	UNDEFINED

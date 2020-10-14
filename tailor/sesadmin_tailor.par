@@ -1,0 +1,45 @@
+//CB>-------------------------------------------------------------------
+//
+//      File, Component, Release:
+//                     tailor/sesadmin_tailor.par 1.0 13-MAR-2008 10:15:18 DMSYS
+//
+//      File:      tailor/sesadmin_tailor.par
+//      Revision:      1.0
+//      Date:          13-MAR-2008 10:15:18
+//
+//      DESCRIPTION: SES customer system parameter file,
+//                       maintained by VDI customer services
+//
+//<CE-------------------------------------------------------------------
+
+// "@(#) tailor/sesadmin_tailor.par 1.0 13-MAR-2008 10:15:18 DMSYS"
+
+Admin
+BEGIN
+	autoLogoffTimeout               = #900
+		// COMMENT: number of idle seconds to terminate  - 0 to disable
+		// CONSTRAINTS: 0..100000;
+		// MANDATORY;
+
+	compatibilityTicketRequired	= "yes"
+		// COMMENT: detailed description has to be inserted
+		// POSSIBLE-VALUES: "yes", "no";
+		// MANDATORY;
+
+	verboseMode                     = "on"
+		// COMMENT: mode of operation of admin tool; in verbose mode
+		// permission menu is displayed etc. 
+		// POSSIBLE-VALUES: "on", "off";
+		// OPTIONAL;
+
+	additionalDataAsText            = "no"
+		// COMMENT: format of additional data in ticket is text or not
+		// POSSIBLE-VALUES: "yes", "no";
+		// OPTIONAL;
+
+	serviceLevelVisible             = "no"
+		// COMMENT: service levels are displayed in ticket or not
+		// POSSIBLE-VALUES: "yes", "no";
+		// OPTIONAL;
+END
+

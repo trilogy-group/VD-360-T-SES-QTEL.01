@@ -1,0 +1,28 @@
+//CB>-------------------------------------------------------------------
+//
+//	File, Component, Release:
+//	               tailor/admin_tailor.par 1.0 13-MAR-2008 10:15:17 DMSYS
+//
+//	File:      tailor/admin_tailor.par
+//	Revision:      1.0
+//	Date:          13-MAR-2008 10:15:17
+//
+//	DESCRIPTION: SES customer system parameter file,
+//			 maintained by VDI customer services
+//
+//<CE-------------------------------------------------------------------
+
+// "@(#) tailor/admin_tailor.par 1.0 13-MAR-2008 10:15:17 DMSYS"
+
+UserLoginArguments
+BEGIN
+
+	ignorePosition                  = "yes"
+		// COMMENT: specifies whether the position argument comming 
+		// with the user login protocol should be regarded to apply the
+		// position ticket, or not; specifiying "yes" will result
+		// in no restrictions concerning the position privileges;
+		// POSSIBLE-VALUES: "yes", "no";
+		// MANDATORY;
+
+END

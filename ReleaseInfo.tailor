@@ -1,0 +1,51 @@
+#sccs>>---------------------------------------------------------------------//
+#---------------------------------------------------------------------------//
+#
+#  File, Component, Release:
+#                 ReleaseInfo.tailor 1.0 13-MAR-2008 10:15:18 DMSYS
+#
+#  File:      ReleaseInfo.tailor
+#  Revision:      1.0
+#  date:          13-MAR-2008 10:15:18
+#
+#---------------------------------------------------------------------------//
+#sccs<<---------------------------------------------------------------------//
+
+#static const char *sccsId_ReleaseInfo_tailor = "@(#) ReleaseInfo.tailor 1.0 13-MAR-2008 10:15:18 DMSYS";
+
+#
+# Copyright:
+# This software is distributed only by license
+# Copyright 1996 - 2008 by Volt Delta International
+# All rights reserved
+#
+
+# Customer 
+QTEL
+
+# Project 
+QTEL_DIS.1
+
+# 1 Software dependencies 
+
+# 1.1 operating system for runtime environment 
+
+# (all valid operating systems) 
+
+# 1.2 prerequisite runtime components 
+
+# component runtime level 
+
+rSES.02.72 >= 22
+
+# 2 Compatibility issues 
+
+# 2.1 Other Compatibilities 
+
+# release level 
+
+# 2.2 Other Incompatibilities 
+
+# release level 
+
+# 3 Remarks 

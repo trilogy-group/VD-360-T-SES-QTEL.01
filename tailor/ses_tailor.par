@@ -1,0 +1,128 @@
+//CB>-------------------------------------------------------------------
+//
+//	File, Component, Release:
+//	               tailor/ses_tailor.par 1.0 13-MAR-2008 10:15:18 DMSYS
+//
+//	File:      tailor/ses_tailor.par
+//	Revision:      1.0
+//	Date:          13-MAR-2008 10:15:18
+//
+//	DESCRIPTION: SES customer system parameter file,
+//			 maintained by VDI customer services
+//
+//<CE-------------------------------------------------------------------
+
+// "@(#) tailor/ses_tailor.par 1.0 13-MAR-2008 10:15:18 DMSYS"
+
+SesSystem
+BEGIN
+
+	adminSessionIdlePeriod/min      = #15
+		// COMMENT: delay in minutes before removing an idle admin 
+		// session 
+		// CONSTRAINTS: 0..1440;
+		// DEFAULT: 60;
+		// NOTE: set 0 to disable automatic removal
+
+	externalUserIdsAllowed          = "no"
+		// COMMENT: define whether the system may accept login requests
+		// of external users;
+		// POSSIBLE-VALUES: "yes", "no";
+		// DEFAULT: "no";
+
+	internalUserIdsAllowed          = "yes"
+		// COMMENT: define whether the system may accept login requests
+		// of internal users;
+		// POSSIBLE-VALUES: "yes", "no";
+		// DEFAULT: "no";
+
+	systemTicketActive              = "no"
+		// COMMENT: activates the system-wide ticket (SystemTicket;
+		// see below) to be considered in any returned ticket;
+		// POSSIBLE-VALUES: "yes", "no";
+		// DEFAULT: "no";
+
+	singleAdministratorRestriction  = "no"
+		// COMMENT: activates the singleAdministratorRestriction mode
+		// POSSIBLE-VALUES: "yes", "no";
+		// DEFAULT: "no";
+
+END
+
+
+
+ExternalUser
+BEGIN
+	defaultGroupName                = "EXTERNAL"
+		// COMMENT: group name used for sessions opened with
+		// externalUserId;
+		// CONSTRAINTS: size upto 30, printable string;
+		// DEFAULT: "EXTERNAL";
+
+	defaultUserCode                 = "external"
+		// COMMENT: user code used for sessions opened with
+		// externalUserId;
+		// CONSTRAINTS: size upto 10;
+		// DEFAULT: "external";
+
+	defaultUserRemark               = "External User"
+		// COMMENT: user remark used for sessions opened with
+		// externalUserId;
+		// CONSTRAINTS: size upto 30;
+		// DEFAULT: "External User";
+
+END
+
+
+
+MisClient
+BEGIN
+	misNotifications                = "yes"
+		// COMMENT: switch to enable ("yes") or disable ("no") sending
+		// MIS notifications;
+		// POSSIBLE-VALUES: "yes", "no";
+		// MANDATORY;
+
+END
+
+
+
+SystemTicket SET
+
+BEGIN
+	ticketId                        = '01'H
+		// CONSTRAINTS: registered oid, 1..255;
+		// MANDATORY;
+	permissions                     = "11111111_11111111_11111111_11111111"
+		// CONSTRAINTS: size 0..128 bit;
+		// MANDATORY;
+	additionalData                  = "_"
+		// CONSTRAINTS: size 0..128 bit;
+		// MANDATORY;
+END
+
+// possibly additional OsaComponentTicket definitions
+
+ENDSET
+
+
+NamedSystemTicket SET
+
+BEGIN
+	ticketId                        = '01'H
+		// CONSTRAINTS: registered oid, 1..255;
+		// MANDATORY;
+	permissions                     = "11111111_11111111_11111111_11111111"
+		// CONSTRAINTS: size 0..128 bit;
+		// MANDATORY;
+	additionalData                  = "_"
+		// CONSTRAINTS: size 0..128 bit;
+		// MANDATORY;
+END
+
+// possibly additional NamedOsaComponentTicket definitions
+
+ENDSET
+
+
+
